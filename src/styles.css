@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Bradley Hand', cursive;
+  }
+
+
+h1{
+    color: white;
+    position: relative;
+    top: 130px;
+}
+
+h3{
+color: white;
+top: 200px;
+position: relative;
+
+}
+
+  body{
+background-color: #2a2a2a;
+
+  }
+
+.razones{
+
+position: relative;
+top: 280px;
+font-size: 30px;
+margin: 15px;
+padding: 15px;
+
+
+}
+
+.text{
+
+text-align: center;
+position: relative;
+top: 250px;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+font-size: 35px;
+padding: 25px;
+
+
+
+}
+
+.icon{
+font-size: 35px;
+position: relative;
+top: 80px;
+right: 400px;
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  /* Agrega aquí los estilos específicos para pantallas de celulares pequeños */
+ 
+  
+  
+  
+  /* Estilo para el ícono de despliegue */
+  #menu-container i {
+    font-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    color: black; /* Cambia el color del ícono */
+  }
+  
+  #menu-container:hover #menu {
+    display: block;
+  }
+  
+  #menu li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  #menu li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+ 
+
+  .social {
+    color: #000000; /* Cambia el color de los iconos sociales */
+    position: absolute;
+    left: 50%;
+    top: 240px;
+    font-size: 20px;
+  }
+  
+  /* Estilos para la sección Bio */
+  .Bio {
+    position: relative;
+    left: 45%;
+    top: 380px;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+  }
+  h1{
+
+position: relative;
+top: 120px;
+left: 10px;
+  }
+}
+
+
+
+
+/* Media query para celulares medianos (de 577px a 767px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  /* Agrega aquí los estilos específicos para pantallas de celulares medianos */
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #2E4053; /* Puedes cambiar el color del fondo *
+    font-weight: 250%;
+    position: relative;
+    text-align: center; /* Añade centrado al contenido */
+  }
+  
+  /* Estilos para el menú responsive */
+  #menu-container {
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    right: 10px;
+
+  }
+  
+  #menu {
+    position: absolute;
+    top: 100%; /* Ajusta la distancia entre el menú y el contenedor */
+    right: 0; /* Ajusta la distancia desde el lado derecho */
+    display: none; /* Para ocultar el menú inicialmente */
+    background-color: #2E4053; /* Puedes cambiar el color del fondo */
+    padding: 10px;
+  }
+  
+  /* Estilo para el ícono de despliegue */
+  #menu-container i {
+    font-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    color: #ffffff; /* Cambia el color del ícono */
+  }
+  
+  #menu-container:hover #menu {
+    display: block;
+  }
+  
+  #menu li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  #menu li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #menu li a:hover {
+    color: #ffa500; /* Cambia el color del enlace al pasar el ratón */
+  }
+  
+  
+  
+  /* Estilos para la sección Bio */
+  .Bio {
+    position: absolute;
+    left: 50%;
+    top: 460px;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+    text-align: center;
+    padding: 10px;
+  }
+
+  
+  
+}
+
+
+
+
+
+
+
+
+/* Media query para tablets (de 768px a 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Agrega aquí los estilos específicos para pantallas de tabletas */
+}
+
+/* Media query para pantallas pequeñas (de 992px a 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Agrega aquí los estilos específicos para pantallas pequeñas */
+}
+
+/* Media query para pantallas medianas y grandes (a partir de 1200px) */
+@media screen and (min-width: 1200px) {
+  /* Agrega aquí los estilos específicos para pantallas medianas y grandes */
+}
