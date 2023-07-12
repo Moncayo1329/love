@@ -5,6 +5,7 @@
     text-decoration: none;
     text-align: center;
     color: white;
+    font-family: 'Bradley Hand', cursive;
   }
 
 
@@ -129,13 +130,7 @@ left: 10px;
 /* Media query para celulares medianos (de 577px a 767px) */
 @media screen and (min-width: 577px) and (max-width: 767px) {
   /* Agrega aquí los estilos específicos para pantallas de celulares medianos */
-  body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #2E4053; /* Puedes cambiar el color del fondo *
-    font-weight: 250%;
-    position: relative;
-    text-align: center; /* Añade centrado al contenido */
-  }
+
   
   /* Estilos para el menú responsive */
   #menu-container {
@@ -146,14 +141,6 @@ left: 10px;
 
   }
   
-  #menu {
-    position: absolute;
-    top: 100%; /* Ajusta la distancia entre el menú y el contenedor */
-    right: 0; /* Ajusta la distancia desde el lado derecho */
-    display: none; /* Para ocultar el menú inicialmente */
-    background-color: #2E4053; /* Puedes cambiar el color del fondo */
-    padding: 10px;
-  }
   
   /* Estilo para el ícono de despliegue */
   #menu-container i {
