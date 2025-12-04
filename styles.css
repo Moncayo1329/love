@@ -4,26 +4,26 @@
     box-sizing: border-box;
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: rgb(40, 34, 34);
     font-family: 'Bradley Hand', cursive;
   }
 
 
 h1{
-    color: white;
+    color: rgb(30, 23, 23);
     position: relative;
     top: 130px;
 }
 
 h3{
-color: white;
+color: rgb(40, 34, 34);
 top: 200px;
 position: relative;
 
 }
 
   body{
-background-color: #2a2a2a;
+background-color: #e2cece;
 
   }
 
