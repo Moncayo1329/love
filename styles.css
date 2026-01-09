@@ -4,38 +4,77 @@
     box-sizing: border-box;
     text-decoration: none;
     text-align: center;
-    color: rgb(40, 34, 34);
+    color: rgb(169, 150, 150);
     font-family: 'Bradley Hand', cursive;
   }
 
 
 h1{
-    color: rgb(30, 23, 23);
-    position: relative;
-    top: 130px;
+    color: rgb(8, 7, 7);
+    margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 h3{
-color: rgb(40, 34, 34);
-top: 200px;
-position: relative;
+color: rgb(58, 35, 35);
+margin-bottom: 40px;
+  text-align: center;
+  max-width: 700px;
 
 }
 
   body{
-background-color: #e2cece;
+    margin: 0;
+  font-family: system-ui, sans-serif;
+background-color: oklch(87.41% 0.06685 163.024);
+line-height: 1.6;
+display: flex;
+flex-direction: column;
+align-items: center;
 
   }
 
-.razones{
+  :root {
+  --verde-oklch: oklch(77.17% 0.06362 162.825);
+}
 
-position: relative;
-top: 280px;
-font-size: 30px;
-margin: 15px;
-padding: 15px;
+.boton {
+  background-color: var(--verde-oklch);
+}
 
 
+/* SECCIÓN MÚSICA */
+.music {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 60px;
+  background:oklch(85.674% 0.07659 160.239);
+  border-radius: 12px;
+}
+
+.music p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.music ul {
+  list-style: none;
+  padding: 0;
+}
+
+.music li {
+  margin-bottom: 10px;
+}
+
+.music a {
+  color: #1d3639;
+  text-decoration: none;
+}
+
+.music a:hover {
+  text-decoration: underline;
 }
 
 .text{
@@ -79,7 +118,7 @@ right: 400px;
   /* Estilo para el ícono de despliegue */
   #menu-container i {
     font-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
-    color: black; /* Cambia el color del ícono */
+    color: rgb(70, 69, 69); /* Cambia el color del ícono */
   }
   
   #menu-container:hover #menu {
@@ -181,6 +220,86 @@ left: 10px;
   
   
 }
+
+
+/* Carrusel */
+
+.carousel {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+/* OCULTAR RADIOS */
+.carousel input {
+  display: none;
+}
+
+/* SLIDES */
+.slides {
+  display: flex;
+  width: 500%; /* 5 imágenes */
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+/* IMÁGENES */
+.slides img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MOVIMIENTO */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-20%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-40%);
+}
+
+#slide4:checked ~ .slides {
+  transform: translateX(-60%);
+}
+
+#slide5:checked ~ .slides {
+  transform: translateX(-80%);
+}
+
+/* NAVEGACIÓN */
+.nav {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav label {
+  width: 12px;
+  height: 12px;
+  background: #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .nav label:nth-child(1),
+#slide2:checked ~ .nav label:nth-child(2),
+#slide3:checked ~ .nav label:nth-child(3),
+#slide4:checked ~ .nav label:nth-child(4),
+#slide5:checked ~ .nav label:nth-child(5) {
+  background: white;
+}
+
+
 
 
 
